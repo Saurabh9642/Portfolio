@@ -114,6 +114,39 @@ document.querySelectorAll('.card').forEach(card => {
   }, 5000);
 
 
+  //NEXT slider javascrit 
+  let activeSlide = 0;
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slidesContainer = document.querySelector('.certification-slides');
+  const slides = document.querySelectorAll('.certification-slide');
+  const totalSlides = slides.length;
+
+  function changeSlide(direction = 1) {
+    // Update active slide index
+    activeSlide += direction;
+    if (activeSlide < 0) {
+      activeSlide = totalSlides - 1; // Loop to last slide
+    } else if (activeSlide >= totalSlides) {
+      activeSlide = 0; // Loop to first slide
+    }
+
+    // Apply transformation to show the active slide
+    slidesContainer.style.transform = `translateX(-${activeSlide * 100}%)`;
+  }
+
+  // Automatic slide scroll every 5 seconds
+  setInterval(() => {
+    changeSlide(1); // Move to the next slide
+  }, 5000); // 5000 milliseconds = 5 seconds
+
+  // Debug: Log current slide on initialization
+  console.log("Slider initialized and auto-scroll set.");
+});
+
+
+
+
   // script.js
 
 document.addEventListener('DOMContentLoaded', function() {
