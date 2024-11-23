@@ -697,12 +697,63 @@ a{
   border-radius: 10px;
 }
 
+.certification-slider {
+  position: relative;
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.certification-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* 7 slides */
+  height: auto;
+  text-align: center;
+}
+
+.certification-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.certification-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 @media (width:70%){
   .slide img{
     width: 100%;
   }
 }
 
+.Cerification h1 {
+  text-align: center;        
+  font-weight: 800;          
+  margin-top: 20px;          
+  font-size: 2.5rem;         
+  text-transform: uppercase; 
+  color: #333;               
+  line-height: 1.2;          
+  letter-spacing: 1px;       
+}
+
+.section-header{
+  text-align: center;        
+  font-weight: 800;          
+  margin-top: 20px;          
+  font-size: 2rem;         
+  text-transform: uppercase; 
+  color: #333;               
+  line-height: 1.2;          
+  letter-spacing: 1px; 
+}
 .Cerification h1 {
   text-align: center;        
   font-weight: 800;          
